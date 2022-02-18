@@ -19,8 +19,6 @@ def calcular_carga_tributaria(preco, custo, lucro):
     return carga_tributaria
 
 
-percentual_carga_tributaria = calcular_carga_tributaria(
-    preco_final, custo_unitario, lucro)
-percentual_carga_tributaria = "{:.2%}".format(
-    percentual_carga_tributaria).replace(".", ",")
+percentual_carga_tributaria = calcular_carga_tributaria(preco_final, custo_unitario, lucro)
+percentual_carga_tributaria = "{:.2%}".format(percentual_carga_tributaria).replace(".", ",")
 print("Carga tributária: {}".format(percentual_carga_tributaria))
